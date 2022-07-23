@@ -1,0 +1,752 @@
+
+
+ /*starting of the css*/
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: verdana,geneva,san-serif; 
+	background-color: #f2f2f2;
+	font-size:17px;
+	/* To adjust the webpage margin and padding */
+	/* To change the backgorund color and the font-family of the body*/
+}
+
+
+header{
+	position:fixed; /*to fixed the position of the header to make it stick at the top even when it scroll*/
+	z-index:100;	
+	width:100%;	
+}
+
+/*css for the responsive menu bar*/
+
+#menu-nav{
+	background: #b3b3b3;	/*The menu bar color with having a height of 80px and also a 100% width of screen size  */
+	height: 80px;
+	width: 100%;
+}
+
+label.logo img{			/* to set the logo img width and height to 75px*/
+	width: 75px;
+	height: 75px;
+}
+#menu-nav ul{
+	float: right;	/* to set the ul of the menu nav to the right and left so spacing on the left*/
+	margin-right: 20px;
+}
+
+#menu-nav ul li{
+	display: inline-block;
+	line-height:80px;
+	margin: 0 5px;
+}
+
+#menu-nav ul li a {	/*set the list to white color*/
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;	/*make the rounded the corner of the border to 3px */
+	text-transform: uppercase;	/* to make sure all of the list are in uppercase form*/
+}
+
+#menu-nav ul .dropdown .dropdown-list a{	/*set the list to white color*/
+	font-size: 17px;
+	text-align:center;
+	line-height:30px;
+	border-radius: 3px;	/*make the rounded the corner of the border to 3px */
+	
+}
+
+
+
+a.active, .hnav a:hover{
+	background: #00b3b3;				/*change the color of the active link*/
+	transition: .5s;				/*add an 0.5s of trasition time*/
+}
+
+.checkbtn img{		/*addjust the img size and its margin*/
+	height:50px;
+	width:50px;
+	float:right;
+	margin:20px 30px 20px;
+	cursor: pointer;
+	display: none;		/*to make it disapear from the menu bar*/
+}
+
+#check{
+	display:none;	/*let the checkbox unseen*/
+}
+
+
+@media screen and (max-width:800px){		/*set the media screen so when the screen size is smaller than 1230px it will show the menu img*/
+	.checkbtn img{
+		display:block;
+	}
+	ul{
+		position:fixed;		/*set the ul position fixed and set its alignmnet ,transition, background and backkground size */
+		width:100%;
+		height:100vh;
+		background:#2c3e50;
+		top:80px;
+		left:-100%;
+		text-align:center;
+		transition:all .5s;
+	}
+	#menu-nav .hnav li{
+		display:block;
+		margin:50px 0;
+		line-height:30px;
+	}
+	#menu-nav .hnav li a{	/*set the list font-size*/
+		font-size:20px;
+	}
+	#menu-nav .hnav .dropdown .dropbtn{
+		font-size:20px;
+
+
+	}
+	#menu-nav .hnav .dropdown .dropdown-list {
+		position: relative;
+		background-color:#2c3e50;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+	}
+	
+	#menu-nav ul .dropdown .dropdown-list li a{	/*set the list to white color*/
+	font-size: 20px;
+	text-align:center;
+	}
+
+	#check:checked ~ ul{
+		left:0;
+	}
+}
+
+#hstyle1{
+	padding-top:100px;		/*set the header top padding so it wont be cover by the banner*/
+}
+
+
+
+.pstyle{
+	font-weight:bold;
+}
+
+#pstyle2{
+	padding-bottom:10px;
+}
+
+h1{
+	text-align: center;				/*set all the h1 to center*/
+	font-size: 60px;				/*set all the h1 having a font-size of 60px*/
+	line-height: 1.5em;				
+	font-family: 'Orbitron', sans-serif;		/*set all the h1 font-family to orbitron*/
+	padding:20px 0px 20px;
+}
+
+
+
+h2{
+	text-align: center;			/*set all the h2 to center*/
+	padding-bottom:5px;
+	font-size: 20px;		/*set all the h2 having a font-size of 20px*/
+	font-family: 'Baloo Bhaina 2', cursive; /*set all the h2 font-family to baloon bhaina 2*/
+}
+
+#h2style{
+		width:75%;
+		margin: 0 auto 25px;
+}
+
+body article{
+	text-align: center;
+}
+
+.banner{
+	padding-top:80px;		/*setting the banner having a top padding of 80px, a width of 100% and 50% of height of the screen size*/
+	width: 100%;
+	height:50%;
+	display: block;
+}
+
+.banner, .banner-image{		/*this css is to set the banner img having a 100% width and 50% of height within the container which is class="banner"*/
+	width: 100%;
+	height:50%;
+	display: block;
+}
+/*Heading font for the website*/
+
+/*CSS for display the img */			/*most of the website img are using this css*/
+.new-release{						/*fixed the img size with a width of 400px and a height of 200px*/
+	width: 400px;
+	height: 200px;
+	display: inline-block;		/*display the img in inline-block*/
+	margin: 4px;				/*with a margin of top right btm left 4px */
+	position: relative;
+}
+
+.new-release img{		/*the img inside the img container with its width and height of 100% also its border-radius 8px*/
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+}
+
+.new-release:hover img{						/*set the hover effect background filter it by bluring the img for 2px and 60% brightness*/
+	filter: blur(2px) brightness(60%);
+}
+
+.new-release :not(img){			
+	position: absolute;
+	top: 30%;
+	z-index: 1;
+	color: #fff;
+	text-align: center;		
+	width: 100%;
+	opacity: 0;			/*set the opacity to 0 */
+	transition: .3s;	/*set the transition time to 0.3s */
+}
+.new-release:hover :not(img){
+	opacity: 1;
+}
+.new-release h3{			/* setting the h3 margin and font-size*/
+	margin-top:20px;
+	font-size: 20px;
+
+}
+
+.new-release a{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.new-release a:hover{	/*change the hover color*/
+	color: #00b3b3;
+}
+/*border for the text below the img*/
+.shape{
+	text-align:center;
+	display: inline-block;
+	border-radius: 4px;
+	margin:10px;
+}
+
+.shape img{
+	border-radius: 8px; /*Rounded the border-box*/
+}
+
+.shape p {
+
+	text-align:center;
+	letter-spacing:0.5px; 
+	line-height: 2em; 
+	margin: 5px;
+	text-align:left;
+}
+
+/* CSS for footer*/
+
+footer{
+	margin-top:20px;
+	color:white;				/*the word inside the footer will change to white color*/
+	background-color:#17171D;
+	padding-bottom:10px;
+}
+
+footer h4{
+	text-align: center;
+	padding:10px;
+}
+
+footer h4 a{
+	color:white;
+	list-style: none;		/*remove the default style*/
+	text-decoration: none;
+}
+
+
+footer p{
+	letter-spacing:0.5px; 		
+	text-align:center;
+	margin-bottom:0px;
+	font-size: 15px;
+}
+/* CSS For feedback and enquiry webpage */
+.form {
+	width: 75%; /*let the container resize to 75% of the webpage sizes*/
+	padding: 10px; /*to give some padding for the container*/
+	border: 2px solid gray; /* make a border for the container*/
+	border-radius:6px;
+	margin: 0 auto 25px; /* to adjust the container to the center*/
+	letter-spacing:0.5px;
+	line-height: 1.5em;
+}
+
+/* Style the input[type=text], textarea, input[type=email] */
+.form input[type=text], textarea, input[type=email] {
+  width: 75%; /* 75% width */
+  padding: 12px; 
+  border: 1px solid #cccccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+}
+
+.form fieldset{
+	text-align:left;
+}
+
+.form  p{
+	padding-top:5px;
+	letter-spacing:0.5px; 
+	line-height: 1.5em; 
+}
+
+/* Style the submit button */
+.form input[type=submit] {			/*set the submit botton with a backgorund color and color of the text to white*/
+  background-color: #70708f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form input[type=submit]:hover {		/*when hover it the submit button will change to a darker color*/
+  background-color: #383847;
+}
+
+.form input[type=reset] {			/*same as the submit button but this is for the reset button*/
+  background-color: #FF0000;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form input[type=reset]:hover {		/*same as the submit button but this is for the reset button*/
+  background-color: #e60000;
+}
+
+.form fieldset{					/*remove the default border so it would not having two border line*/
+	border: 0px;
+	border-radius:10px;
+}
+.form legend{	
+	font-size: 40px;
+	font-weight: bold;
+	padding:10px 10px 5px;
+	text-align: left;
+	line-height: 2em;
+	letter-spacing:0.5px;
+	font-family:'Baloo Bhaina 2', cursive;
+}
+
+
+/* For the range options */
+.form input[type=range] {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 35%; /* 35% width of the website*/
+  height: 25px; 
+  background: #d3d3d3; /*apply for the backgorund color of the bar*/
+  opacity: 0.7; /* show only 0.7opacity before mouse-over */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+}
+
+.form input[type=range]:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- to clear all the different browser default look) */
+.form input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* remove the default look */
+  appearance: none;
+}
+
+
+
+
+/* CSS For profile webpage*/
+
+#h1style{
+	font-size:200%;
+	text-align:center;
+	font-family: Arial, sans-serif;
+}
+
+.number{
+	font-family: Arial, sans-serif;
+}
+
+.course{
+	color: rgb(0,150,150);
+}
+
+.container {
+	position: relative;
+	float: none;
+	max-width: 400px;
+	margin: 0 auto;
+	vertical-align: middle;
+
+}
+
+.container img {
+	border-radius: 4px;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	border-style: groove;
+
+}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.table1{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+table ,th, td{
+	border-collapse: collapse;
+	border: 1px solid black;
+	background-color:#f2f2f2;
+	padding: 5px;
+	letter-spacing: 0.5px;
+	line-height:1.5em;
+}
+
+th{
+	font-weight: bold;
+	background-color:#cccccc;
+}
+
+
+
+
+
+footer h4 a:hover{
+	color: #00b3b3;
+}
+
+footer p a{
+	color:white;
+}
+footer p a:hover{
+	color: #00b3b3;
+}
+
+.email{
+	text-align:center;
+}
+
+/* CSS for disclaimer webpage */
+
+#disclaimer{
+	text-align:left;
+	border: 1px solid black;
+	border-radius: 4px;
+	width: 75%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+#disclaimer li {
+	list-style-type: upper-roman;
+	list-style-position: inside;
+	letter-spacing:0.5px;
+	line-height: 1.5em;
+	padding:10px;
+}
+
+
+/*css for product 4*/
+
+.g{
+	text-align:left;
+	border-radius: 4px;
+	width: 75%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.g li {
+	list-style-type: upper-roman;
+	list-style-position: inside;
+	letter-spacing:0.5px;
+	line-height: 1.5em;
+	padding:10px;
+}
+
+
+.g img{
+	padding-top: 50px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	max-width:100%;
+	height:auto;
+}
+
+.g h2{
+	font-size:25px;
+}
+
+
+.g section{
+	margin:auto;
+	width:auto;
+}
+
+
+/*CSS For Video */
+
+
+.video-wrapper {			/*set a top padding for the video so it won't stick at the banner*/
+	padding-top:25px;
+}
+
+.video-wrapper iframe {
+	display: block;		/*set to display as a block*/
+	margin: 0 auto;		
+	border: 0px;
+	width:560px;
+	height: 315px;
+
+}
+
+
+/*CSS For slideshow*/
+
+.galleryContainer{											/*set the container for the image at slideshow*/
+    width: 100%;
+    height: 600px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0px 0px 3px 1px #00000078;					/*set the shadow for the outer border*/
+	padding:100px 10px 10px 10px;							/*set the padding for the img container*/
+    box-sizing: border-box;
+}
+.galleryContainer .slideShowContainer{			
+    width: 100%; 											/*set the width to 100% for the container*/
+    height: 90%;											/*set the height to 90% for the container then the remaining 10% for the dots*/ 
+    overflow: hidden;										/*hide the overflow so the animation outside the box wont show*/
+    background-color: #f2f2f2;								/*set a backgorund color*/
+    position: relative;
+}
+
+
+.galleryContainer .slideShowContainer .imageShow{
+    width: 100%;													/*set the width to 100% for the img container*/
+    height: 100%;												/*set the height to 100% for the img container*/
+    position: absolute;
+    opacity: 0;
+}
+.galleryContainer .slideShowContainer .imageShow img{
+    width: 100%;											/*set the width to 100% for the img which inside the container*/
+    height: 100%;										/*set the height to 100% for the img which inside the container*/
+}
+
+
+.galleryContainer .slideShowContainer .leftArrow,.galleryContainer .slideShowContainer .rightArrow{
+    width: 50px;
+    background: #00000036;													
+    position: absolute;												/*set the position to absolute */
+    left: 0;															/*se the z-index*/
+    z-index: 1;
+    transition: background 0.5s;										/*set a transition time of 0.5s */
+    height: 72px;
+    top: 50%;									
+    transform: translateY(-50%);								
+    border-top-right-radius: 10px;								/*set only the border-top-right-radius for 10px*/
+    border-bottom-right-radius: 10px;						/*set only the border-bottom-right-radius for 10px*/
+}
+.galleryContainer .slideShowContainer .rightArrow{
+    left: auto;
+    right: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;							/*set only the border-top-left-radius for 10px*/
+    border-bottom-left-radius: 10px;						/*set only the border-bottom-left-radius for 10px*/
+}
+.galleryContainer .slideShowContainer .leftArrow:hover,.galleryContainer .slideShowContainer .rightArrow:hover{
+    background: #000000a8;
+    cursor: pointer;
+}
+.galleryContainer .arrow{								/*this part is the css for the arrow */
+    display: inline-block;
+    border: 3px solid white;					/*give the border for 3px, solid and white color*/
+    width: 10px;
+    height: 10px;
+    border-left: none;
+    border-bottom: none;
+    margin: auto;										
+    position: absolute;				
+	left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.galleryContainer .arrow.arrowLeft{
+    transform: rotateZ(-135deg);				/*rotate the arrow to -135 degree*/
+}
+.galleryContainer .arrow.arrowRight{
+    transform: rotateZ(45deg);					/*rotate the arrow to 45 degree*/
+}
+
+.galleryContainer #dotsContainer{
+    width: 100%;				 /*giving the width of the container for 100%*/
+    height: 10%;				/*giving the height for 10%*/
+    text-align: center;			/*align the position to center*/
+    padding-top: 20px;			/* top padding 20px*/
+    box-sizing: border-box;		/*giving it a border-box*/
+}
+.galleryContainer #dotsContainer .dots{
+    display: inline-block;			/*display in inline-block*/
+    width: 15px;					
+    height: 15px;
+    border-radius: 50%;				/*make the dot to round shape*/
+    margin-left: 5px;
+    background-color: #bbbbbb;
+    cursor: pointer;				/*set the cursor to pointer when the user point at it*/
+    transition:background-color 0.5s;
+}
+.galleryContainer #dotsContainer .dots:first-child{
+    margin-left: 0;
+}
+.galleryContainer #dotsContainer .dots:hover,.galleryContainer #dotsContainer .dots.active{
+    background-color: #737373;				/*set a color for the dot when active*/
+}
+
+.galleryContainer .moveLeftCurrentSlide{		/*set the animation of the slide when move left*/
+    animation-name: moveLeftCurrent;
+    animation-duration: 0.5s;				/*set the duration of the animation for 0.5s*/
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+
+}
+.galleryContainer .moveLeftNextSlide{			/*set the animation of the slide when move left*/
+    animation-name: moveLeftNext;
+    animation-duration: 0.5s;					/*set the duration of the animation for 0.5s*/
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveLeftCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: -100%;opacity: 1;}
+}
+@keyframes moveLeftNext {
+    from {margin-left: 100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+}
+
+
+.galleryContainer .moveRightCurrentSlide{		/*set the animation of the slide when move right*/
+    animation-name: moveRightCurrent;
+    animation-duration: 0.5s;			/*set the duration of the animation for 0.5s*/
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+.galleryContainer .moveRightPrevSlide{		/*set the animation of the slide when move right*/
+    animation-name: moveRightPrev;
+    animation-duration: 0.5s;				/*set the duration of the animation for 0.5s*/
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveRightCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: 100%;opacity: 1;}
+}
+@keyframes moveRightPrev {
+    from {margin-left: -100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+}
+
+
+
+
+/*Enquiry button*/
+.enBtn {			/*set the enquiry botton with a backgorund color and color of the text to white*/
+  background-color: #70708f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left:12.5%;
+  
+}
+
+.enBtn:hover {		/*when hover it the enquiry button will change to a darker color*/
+  background-color: #383847;
+}
+
+/*nav product bar list*/
+.dropbtn {
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown a{
+	padding: 7px 13px;
+}
+
+.dropdown-list {
+  display: none;
+  position: absolute;
+  background-color:#b3b3b3;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);		/*gives the drop-down box a shadow for creating a layer vision*/
+  z-index: 1;
+  min-width: 100px;
+  padding:5px;
+}
+
+.dropdown-list a {
+	display: block;
+}
+.dropbtn{
+	line-height:20px;
+	padding:7px;
+}
+.dropbtn:hover {
+	background-color: #00b3b3;
+	transition: .5s;
+}
+.dropdown a:hover {
+	background-color: #00b3b3;
+	transition: .5s;
+}
+
+.show {display: block;}

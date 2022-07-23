@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- Start of html -->
+<html lang="en">
+	<!-- Description: Creating Web application -->
+	<!-- Author: Nathan Yong Hao Woei -->
+	<!-- Date: 16 April 2020 -->
+	<!-- Validated: 21/4/2020 -->
+	
+<head>
+<title>Panda Tech | Enquiry</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Nathan Yong Hao Woei"/>
+	<meta name="description" content="Panda Tech Enquiry"/>
+	<meta name="keywords" content="Enquiry, Panda Tech"/>
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2%7COrbitron&amp;display=swap" rel="stylesheet"/>
+	<!--https://fonts.google.com/-->
+	<link rel="shortcut icon" type="image/png" href="images/favicon.icon.png"/>
+
+</head>
+
+<!-- Start of Body -->
+<body>
+
+<!-- Start of header -->
+<header>
+<nav id="menu-nav">
+	<input type="checkbox" id="check"/>
+	<label for="check" class="checkbtn">
+		<img id="menuicon" src="images/menu.icon.png" alt="menu"/>
+	</label>
+	<label class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"/></a></label>
+	<ul class="hnav">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="product1.html">Gaming Keyboards</a></li>
+		<li><a href="product2.html">Gaming Mouse</a></li>
+		<li><a href="product3.html">Gaming Controller</a></li>
+		<li><a class="active" href="enquiry.html">Enquiry</a></li>
+		<li><a href="feedback.html">Feedback</a></li>
+		<li><a href="order.html">Order</a></li>
+	</ul>
+</nav>
+</header>
+<!-- End of header -->
+
+
+<!-- Start of article -->
+<article>
+<h1 id="hstyle1">Enquiry</h1>
+<h2>Hello! You got any questions don't feel hesitate to ask us!</h2>
+<div class="form">
+<form name="feedback" action="mailto:feedback@pandatech.com" method="post" enctype="text/plain">
+	<fieldset>
+		<legend>Customer Information</legend>
+			<p><label for="fname">First name:</label>
+				<input type="text" name="fname" id="fname" size="25"  pattern="[A-Za-z]{1,}"  required="required"  maxlength="25" placeholder="First name" />
+			</p>
+			
+			<p><label for="lname">Last name:</label>
+				<input type="text" name="lname" id="lname" size="25"  pattern="[A-Za-z]{1,}"  required="required"  maxlength="25" placeholder="Last name" />
+			</p>
+	
+			<p><label for="email">Email Address:</label>
+				<input type="email" name="email" id="email" size="30" placeholder="email@sample.com" required="required"/>
+			</p>
+
+			<label for="address">Address:</label>
+			<p><input type="text" name="saddress" id="address" size="40" required="required"  maxlength="40" placeholder="Street address"/>
+				<input type="text" name="city" id="city" size="20" required="required"  maxlength="20" placeholder="City/Town"/>
+			<br/>
+			<label for="state">State:</label><br/>
+				<select name="state" id="state" size="6" multiple="multiple">
+				<optgroup label="state">
+					<option value='Selangor' selected='selected'>Selangor</option>
+					<option value='Johor'>Johor</option>
+					<option value='Sabah'>Sabah</option>
+					<option value='Sarawak'>Sarawak</option>
+					<option value='Perak'>Perak</option>	
+					<option value='Kedah'>Kedah</option>
+					<option value='Kelantan'>Kelantan</option>	
+					<option value='Penang'>Penang</option>	
+					<option value='Pahang'>Pahang</option>	
+					<option value='Negeri Sembilan'>Negeri Sembilan</option>
+					<option value='Malacca'>Malacca</option>
+					<option value='Perlis'>Perlis</option>
+					<option value='Kuala Lumpur'>Kuala Lumpur</option>
+					<option value='Labuan'>Labuan</option>
+					<option value='Putrajaya'>Putrajaya</option>
+				</optgroup>
+				</select>
+				<br/>
+				<label for="pcode">Postcode:</label>
+				<input type="text" name="pcode" id="pcode" size="10"  pattern="[0-9]{5}"  required="required"  placeholder="e.g. 88400"/>
+			</p>
+			
+			<p><label for="phone_no">Phone number:</label>
+				<input type='text' name='phone_no' id="phone_no" size="10" pattern="[0-9]{10}"  required="required" placeholder="e.g. 0168992881" />
+			</p>
+			
+			<label for="product">Product:</label><br/>
+				<select name="product" id="product" size="6" multiple="multiple">
+				<optgroup label="Gaming Keyboards">
+					<option value='g413' selected='selected'>Logitech G413 Carbon</option>
+					<option value='g512'>Logitech G513 Carbon</option>
+					<option value='prox'>Logitech Pro X</option>
+					<option value='hypxfpsa'>HyperX FPS Alloy</option>
+					<option value='hypxaelitergb'>HyperX Alloy Elite RGB</option>	
+					<option value='hypxacorergb'>HyperX Alloy Core RGB</option>
+					<option value='rblackw'>Razer BlackWidow</option>	
+					<option value='rhuntsme'>Razer HuntsMan Elite</option>	
+				</optgroup>
+				
+				<optgroup label="Gaming Mouse">
+					<option value='g502' selected='selected'>Logitech G502 Lightspeed</option>
+					<option value='hypxpffpspro'>HyperX Pulsefire FPS Pro</option>
+					<option value='hypxpfdart'>HyperX Pulsefire Dart</option>
+					<option value='hypxpfraid'>HyperX Pulsefire Raid</option>
+					<option value='rmambae'>Razer Mamba Elite</option>
+					<option value='rviper'>Razer Viper</option>	
+				</optgroup>
+				
+				
+				<optgroup label="Gaming Controller">
+					<option value='rwolverineu' selected='selected'>Razer Wolverine Ultimate</option>
+					<option value='rraijum'>Razer Raiju Mobile</option>
+					<option value='xboxeone'>X-box Elite One</option>
+					<option value='rraijute'>Razer Raiju Tournament Edition</option>
+					<option value='nrevolutionu'>Nacon Revolution Unlimited</option>
+					<option value='sonyds4'>Sony Dualshock 4</option>	
+				</optgroup>
+				</select>
+			
+			<p><label for="comment">Comments:</label><br/>
+				<textarea name="comment" id="comment" style="height:200px" placeholder="Your Comments"></textarea>
+			</p>
+			
+			
+			
+	</fieldset>
+
+	<p class="buttons">
+		<input type="submit" value="Submit"/>
+		<input type="reset" value="cancel"/>
+	</p>
+	
+</form>		
+</div>				
+</article>
+<!-- End of article -->
+
+<!-- Start of footer -->
+<footer>
+
+	<h4><a href="aboutme1.html">Profile 1 | </a><a href="aboutme2.html">Profile 2 | </a><a href="aboutme3.html">Profile 3 | </a><a href="enhancement.html">Enhancement | </a> <a href="disclaimer.html">Disclaimer</a></h4>
+	<p>Thank you for visiting our website, your support is greatly appreciated.</p>
+</footer>
+
+<!-- End of footer -->
+
+</body>
+<!-- End of body -->
+
+</html>
+<!-- End of html -->

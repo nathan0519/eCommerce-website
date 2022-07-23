@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- Start of html -->
+<html lang="en">
+	<!-- Description: Creating Web application -->
+	<!-- Author: Daniel Cornelius Wong Yui Herng -->
+	<!-- Date: 16 April 2020 -->
+	<!-- Validated:  21/4/2020 -->
+	
+<head>
+<title>Panda Tech | Gaming Mouse</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Daniel Cornelius Wong Yui Herng">
+	<meta name="description" content="Panda Tech Product">
+	<meta name="keywords" content="gaming accesories,mouse, Panda Tech">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2%7COrbitron&display=swap" rel="stylesheet">
+	<!--https://fonts.google.com/-->
+	<link rel="shortcut icon" type="image/png" href="images/favicon.icon.png">
+	<script src="script/script.js"></script>
+	<script src="script/enhancements.js"></script>
+</head>
+
+<!-- Start of Body -->
+<body>
+
+<!-- Start of header -->
+<?php include ("include/navigation.php");?>
+<!-- End of header -->
+	
+	<div class="banner">
+		<img class="banner-image" src="images/banner.png" alt="banner.jpg">
+	</div>
+	
+<!-- Start of article -->
+<article>
+
+	<h1>GAMING MOUSE</h1>
+	<h2 id="h2style">Gaming mice are designed based on the idea of having a smooth grip and supplying your hand with great comfort, higher polling rate, reduced distance between each transmission which allows the cursor to feel smoother and more precise. They usually come with a PC-installed gaming software which is able to customize the mouse such as dots per inch (DPI) and RGB lighting. They also come with extra buttons for convenience which leads to easier gameplay.</h2>
+	<div class="shape"> 
+		<div class="new-release"> 
+			<a href="product4.php">G502 LIGHTSPEED </a>
+			<img src="images/mouse/Logitech-G502-Lightspeed.jpg" alt="g502-lightspeed-gaming-mouse">
+			<h3>Logitech</h3>
+			
+		</div>
+		<p class="pstyle">Logitech G502 LIGHTSPEED</p>
+		<p>RM 688</p>
+	</div>
+	<!-- This information is taken from https://www.google.com/search?q=g502+mouse&rlz=1C1CHBF_enMY845MY845&sxsrf=ALeKk02nEValQ6l0VBkdf59hKDIctg1kZg:1587059780750&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj73N-zwu3oAhV6IbcAHdrxA_sQ_AUoAXoECAwQAw&biw=1536&bih=674#imgrc=JP4VIxTtcatVmM-->	
+	
+	<div class="shape"> 
+		<div class="new-release"> 
+			<a href="enquiry.php" onclick="product2_2()">Pulsefire FPS Pro ?</a>
+			<img src="images/mouse/hyperx-pulsefire-fps-pro.jpg" alt="hyperx-pulsefire-fps-pro-gaming-mouse">
+			<h3>HyperX</h3>
+			
+		</div>
+		<p class="pstyle">HyperX Pulsefire FPS Pro</p>
+		<p>RM 298</p>
+	</div>
+	<!-- This information is taken fromhttps://www.google.com/search?q=Pulsefire+FPS+Pro+Gaming+Mouse&rlz=1C1CHBF_enMY845MY845&sxsrf=ALeKk03aiysGOZfp8xldAKhEOH10RCwvEw:1587107120724&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiCx5rh8u7oAhWBSH0KHYjMCgsQ_AUo-->	
+	
+	<div class="shape"> 
+		<div class="new-release"> 
+			<a href="enquiry.php" onclick="product2_3()">Pulsefire Dart ?</a>
+			<img src="images/mouse/hyperx-pulsefire-dart.jpg" alt="hyperx-pulsefire-dart-gaming-mouse">
+			<h3>HyperX</h3>
+			
+		</div>
+		<p class="pstyle">HyperX Pulsefire Dart</p>
+		<p>RM 448</p>
+	</div>
+	<!-- This information is taken from https://www.google.com/search?q=pulsefire+dart+wireless+gaming+mouse&rlz=1C1CHBF_enMY845MY845&sxsrf=ALeKk02TUs32bV7uuAAbHfm1f_oB7cVJig:1587130558186&source=lnms&tbm=isch&sa=X&ved=2ahUKEwisw4eJyu_oAhXbZCsKHSgJALsQ_AUoAXoECAwQAw&biw=1536&bih=674#imgrc=k9ED06hLrtmXkM-->	
+	<div class="shape"> 
+		<div class="new-release"> 
+			<a href="enquiry.php" onclick="product2_4()">Pulsefire Raid ?</a>
+			<img src="images/mouse/hyperx-pulsefire-raid.jpg" alt="hyperx-pulsefire-raid-gaming-mouse">
+			<h3>HyperX</h3>
+			
+		</div>
+		<p class="pstyle">HyperX Pulsefire Raid</p>
+		<p>RM 262</p>
+	</div>
+	<!-- This information is taken from https://www.google.com/search?q=hyperx+pulsefire+raid&rlz=1C1CHBF_enMY845MY845&sxsrf=ALeKk004j0G2nF4bh_lefuear6SnP95TeA:1587189766502&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiXwuTRpvHoAhXDbn0KHXAsBVcQ_AUoAXoECAwQAw&biw=1536&bih=674#imgrc=FjYsVFlrUEYyTM-->	
+	
+	
+	<div class="shape"> 
+		<div class="new-release"> 
+			<a href="enquiry.php" onclick="product2_5()">Razer Mamba Elite ?</a>
+			<img src="images/mouse/razer-mamba.jpg" alt="razer-mamba-elite-gaming-mouse">
+			<h3>Razer</h3>
+			
+		</div>
+		<p class="pstyle">Razer Mamba Elite</p>
+		<p>RM 393</p>
+	</div>
+	
+	<!-- This information is taken from https://www.google.com/search?q=razer+mamba+elite+hd&tbm=isch&ved=2ahUKEwj-obiLq_HoAhUf7jgGHb7sBc0Q2-cCegQIABAA&oq=razer+mamba+elite+hd&gs_lcp=CgNpbWcQAzoCCAA6BggAEAgQHjoECAAQHjoECAAQGDoECCMQJ1Cp3QFYkekBYNftAWgBcAB4AIABUIgBvAKSAQE1mAEAoAEBqgELZ3dzLXdpei1pbWc&sclient=img&ei=sZyaXr6FCZ_c4-EPvtmX6Aw&bih=674&biw=1536&rlz=1C1CHBF_enMY845MY845#imgrc=1g_u_o6PNW2CEM-->	
+	<div class="shape"> 
+		<div class="new-release"> 
+			<a href="enquiry.php" onclick="product2_6()">Razer Viper ?</a>
+			<img src="images/mouse/razer-viper.jpg" alt="razer-viper-gaming-mouse">
+			<h3>Razer</h3>
+			
+		</div>
+		<p class="pstyle">Razer Viper</p>
+		<p>RM 350</p>
+	</div>
+	
+	<!-- This information is taken from https://www.google.com/search?q=razer+viper&rlz=1C1CHBF_enMY845MY845&sxsrf=ALeKk02fMaZPXWa2SXwhmoSV6J8Gi3YdJQ:1587106953104&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiK26OR8u7oAhXGbX0KHbHPCFQQ_AUoAXoECA0QAw&biw=1536&bih=722#imgrc=FTK2qqmWtfi-9M-->	
+
+</article>
+<!-- End of article -->
+
+<!-- Start of footer -->
+<?php include ("include/footer.php");?>
+<!-- End of footer -->
+
+</body>
+<!-- End of body -->
+
+</html>
+<!-- End of html -->

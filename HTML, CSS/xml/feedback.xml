@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- Start of html -->
+<html lang="en">
+	<!-- Description: Creating Web application -->
+	<!-- Author: Nathan Yong Hao Woei -->
+	<!-- Date: 16 April 2019 -->
+	<!-- Validated: 21/4/2020 -->
+	
+
+
+<head>
+	<title>Panda Tech | Feedback</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Nathan Yong Hao Woei"/>
+	<meta name="Description" content="Panda Tech Feedback"/>
+	<meta name="Keywords" content="Panda Tech, feedback"/>
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2%7COrbitron&amp;display=swap" rel="stylesheet"/>
+	<!--https://fonts.google.com/-->
+	<link rel="shortcut icon" type="image/png" href="images/favicon.icon.png"/>
+
+</head>
+
+
+<!-- Start of body -->
+<body>
+
+<!-- Start of header -->
+<header>
+<nav id="menu-nav">
+	<input type="checkbox" id="check"/>
+	<label for="check" class="checkbtn">
+		<img id="menuicon" src="images/menu.icon.png" alt="menu"/>
+	</label>
+	<label class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"/></a></label>
+	<ul class="hnav">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="product1.html">Gaming Keyboards</a></li>
+		<li><a href="product2.html">Gaming Mouse</a></li>
+		<li><a href="product3.html">Gaming Controller</a></li>
+		<li><a href="enquiry.html">Enquiry</a></li>
+		<li><a class="active" href="feedback.html">Feedback</a></li>
+		<li><a href="order.html">Order</a></li>
+	</ul>
+</nav>
+</header>
+<!-- End of header -->
+
+
+
+<!-- Start of article -->
+<article>
+<h1 id="hstyle1">Feedback</h1>
+<h2>Please provide your feedback below</h2>
+<div class="form">
+<form name="feedback" action="mailto:feedback@magicfactory.com" method="post" enctype="text/plain">
+	<fieldset>
+		<legend>Customer Information</legend>
+			<p><label for="name">Name:</label>
+				<input type="text" name="name" id="name" size="30" placeholder="name" required="required"/>
+			</p>
+	
+			<p><label for="email">Email Address:</label>
+				<input type="text" name="email" id="email" size="20" placeholder="email@sample.com"/>
+			</p>
+
+	</fieldset>
+	
+	<fieldset>
+		<legend>Experience</legend>
+			<p><label>Would you choose our website again?</label>
+				<input type="checkbox" name="thought" value="yes" id="yes"/><label for="yes">Yes</label>
+				<input type="checkbox" name="thought" value="no" id="no"/><label for="no">No</label>
+			</p>
+			
+			<p><label>Rate our respond speed (1 = Slow, 2 = Moderate, 3 = Fast)</label><br/>
+				<input type="range" name="efficiency" min="1" max="3" value="1"/>
+			</p>			
+			<p><label>Overall Experience:</label>
+				<input type="radio" name="rate" value="poor" id="poor"/><label for="poor">Poor</label>
+				<input type="radio" name="rate" value="moderate"  id="moderate"/><label for="moderate">Moderate</label>
+				<input type="radio" name="rate" value="nice"  id="nice"/><label for="nice">Nice</label>
+				<input type="radio" name="rate" value="excellent"  id="excellent"/><label for="excellent">Excellent</label>
+			</p>
+			
+			<p><label for="comment">Comments:</label><br/>
+				<textarea name="comment" id="comment" style="height:200px" placeholder="Your Comments"></textarea>
+			</p>
+			
+	</fieldset>
+
+	<p class="buttons">
+		<input type="submit" value="Submit Feedback"/>
+		<input type="reset" value="cancel"/>
+	</p>
+	
+</form>		
+</div>
+<p id="pstyle2">Thank you for your feedback, your feedback is our opportunity to improve.</p>				
+</article>
+<!-- End of article -->
+
+<!-- Start of footer -->
+<footer>
+
+	<h4><a href="aboutme1.html">Profile 1 | </a><a href="aboutme2.html">Profile 2 | </a><a href="aboutme3.html">Profile 3 | </a><a href="enhancement.html">Enhancement | </a> <a href="disclaimer.html">Disclaimer</a></h4>
+	<p>Thank you for visiting our website, your support is greatly appreciated.</p>
+</footer>
+
+<!-- End of footer -->
+
+</body>
+<!-- End of body -->
+
+</html>
+<!-- End of html -->
